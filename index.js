@@ -35,6 +35,9 @@ if(eligeQueHacer.toUpperCase()==="CREAR"){
                                             (cantidadTomate * tomato) , 
                                             (cantidadHuevoFrito * egg));
             alert(`Según los datos ingresados, tu hamburguesa cuesta: $${precioFinalHamburguesa}.`)
+            
+            console.log("Tu hamburguesa cuesta $ " + precioFinalHamburguesa)
+            
             return precioFinalHamburguesa
         }
 
@@ -46,6 +49,9 @@ if(eligeQueHacer.toUpperCase()==="CREAR"){
 
         function consultarConCuantoAbona() {
             let calculoVuelto = parseInt(prompt(`¿Con cuanto desea abonar?`))
+
+            console.log("Usted va a abonar con: $ " + calculoVuelto)
+
             return calculoVuelto
         }
 
@@ -65,6 +71,9 @@ if(eligeQueHacer.toUpperCase()==="CREAR"){
         }
         }
         calcularVuelto(precioFinalHamburguesa, calculoVuelto)
+
+        console.log(`Tu vuelto es: $${(calculoVuelto-precioFinalHamburguesa)}`)
+        
 }else{
 
         class HamburguesasFunction{
