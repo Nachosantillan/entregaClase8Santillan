@@ -1,6 +1,6 @@
 let eligeQueHacer = prompt("¿Quieres crear tu hamburguesa o elegir una de nuestras opciones? Escribe CREAR o ELEGIR");
 
-if(eligeQueHacer==="CREAR"){
+if(eligeQueHacer.toUpperCase()==="CREAR"){
         let cantidadHamburguesas = 225
         let cantidadQuesoCheddar = 35
         let cantidadHojaLechuga = 15
@@ -99,23 +99,27 @@ if(eligeQueHacer==="CREAR"){
         hamburguesas.push(new HamburguesasFunction("KITA CLUB", "140 gr", "doble cheddar", false, "aros de cebolla", true, false, "SALSA KITA", "papas fritas o batatas"))
         hamburguesas.push(new HamburguesasFunction("TOM & CHERRY", "140 gr", "dambo", "tomate cherry confitado", "a la crema", "en cubos", false, "ALIOLI", "papas fritas o batatas"))
         
-        hamburguesas.push(crearHamburguesa())
+        
         
         console.log(hamburguesas)
+
+
+        // hamburguesas.push(crearHamburguesa())
+
+
+        // function crearHamburguesa(){
+        //     let Nombre = "HAMBURGUESA PERSONALIZADA"
+        //     let Medallon = prompt("Cuantos medallones de carne queres?")
+        //     let Queso = prompt("Que queso queres?")
+        //     let Verduras = prompt("Que verduras queres en tu hamburguesa?")
+        //     let Cebolla = prompt("Que tipo de cebolla queres en tu hamburguesa?")
+        //     let Bacon = prompt("Queres bacon en tu hamburguesa?")
+        //     let Huevo = prompt("Queres huevo en tu hamburguesa?")
+        //     let Salsa = prompt("Que salsa queres en tu hamburguesa?")
+        //     let Acompañamiento = prompt("Con que queres acompañar? Papas fritas o batatas?")
         
-        function crearHamburguesa(){
-            let Nombre = "HAMBURGUESA PERSONALIZADA"
-            let Medallon = prompt("Cuantos medallones de carne queres?")
-            let Queso = prompt("Que queso queres?")
-            let Verduras = prompt("Que verduras queres en tu hamburguesa?")
-            let Cebolla = prompt("Que tipo de cebolla queres en tu hamburguesa?")
-            let Bacon = prompt("Queres bacon en tu hamburguesa?")
-            let Huevo = prompt("Queres huevo en tu hamburguesa?")
-            let Salsa = prompt("Que salsa queres en tu hamburguesa?")
-            let Acompañamiento = prompt("Con que queres acompañar? Papas fritas o batatas?")
-        
-            return new HamburguesasFunction(Nombre, Medallon, Queso, Verduras, Cebolla, Bacon, Huevo, Salsa, Acompañamiento)
-        }
+        //     return new HamburguesasFunction(Nombre, Medallon, Queso, Verduras, Cebolla, Bacon, Huevo, Salsa, Acompañamiento)
+        // }
 
 }
 
