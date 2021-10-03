@@ -1,0 +1,36 @@
+.styleCard{
+   justify-content: center;
+}
+
+.styleTitleCard{
+    color: lightgoldenrodyellow;
+    font-size: 15px;
+    text-align: center;
+    transition: 1s;
+    animation: bounceInRight;
+	animation-duration: 1s;
+    &:hover{
+        transform: scale(1.5);
+    }
+    animation: bounce;
+	animation-duration: 3s;
+}
+.styleSubtitleCard{
+    font-weight: bold;
+    font-style: italic;
+    line-height: 9px;
+    text-align: center;
+}
+
+.styleButtonCard{
+    color: grey;
+    background-color: black;
+    text-align: center;
+    transition: 0.7s;
+    &:hover{
+        transform: scale(1.05);
+        background-color: black;
+        color: white;
+    }
+
+}
