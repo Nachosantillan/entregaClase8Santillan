@@ -79,7 +79,7 @@ body {
 .modal-container {
   height: 100vh;
   width: 100%;
-  background-color: rgba(0, 0, 0, 0.3);
+  background-color: violet;
   position: fixed;
   top: 0;
   left: 0;
@@ -96,8 +96,8 @@ body {
   opacity: 1;
 }
 
-.modal {
-  background-color: white;
+.modalcito {
+  background-color: red;
   width: 400px;
   height: 500px;
   border-radius: 5px;
@@ -110,7 +110,7 @@ body {
   max-height: 90%;
 }
 
-.buttonModal {
+.buttonModalcito {
   color: white;
   background-color: black;
   margin: 30px;

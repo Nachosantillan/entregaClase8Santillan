@@ -34,15 +34,19 @@ arrayProductos.forEach((producto)=>{
                         <h5 class="card-title styleTitleCard">${producto.nombre}</h5>
                         <p class="card-text styleSubtitleCard">Precio simple: $ ${producto.precioSimple}</p>
                         <p class="card-text styleSubtitleCard"">Precio doble: $ ${producto.precioDoble}</p>
-                        <button id="modal-abrir">¡LA QUIERO!</button>
-
-                        <div class="modal-container">
-                            <div class="modal modal-active">
-                                <div><img class="imagenModal1" src="kita.png" alt=""></div>
+                        
+                        
+                        
+                        <button id="modal-abrir">Abrir modal</button>
+                        <div class="modal-container ">
+                            <div class="modalcito modal-active">
+                                <div><img class="imagenModal1" src="kita.jpg" alt=""></div>
                                 <div>VENI A DISFRUTAR A KITA</div>
-                                <div><button class="buttonModal" id="modal-cerrar">Cerrar</button></div>
+                                <div><button class="buttonModalcito" id="modal-cerrar">Cerrar</button></div>
                             </div>
                         </div>
+
+
                     </div>
                 </div>`
 
