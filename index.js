@@ -15,7 +15,11 @@ const arrayProductos=[
 
 ]
 
+
+
 const contenedorProductos = document.getElementById("productos")
+
+
 
 arrayProductos.forEach((producto)=>{
     
@@ -24,14 +28,32 @@ arrayProductos.forEach((producto)=>{
     div.style = "width: 18rem"
     
     div.innerHTML = `
-            <img src=${producto.img} class="card-img-top" style="border-color: white"| alt="...">
-                <div class="card-body styleCard" style="border: 18px; align-items: center" >
-                    <h5 class="card-title styleTitleCard">${producto.nombre}</h5>
-                    <p class="card-text styleSubtitleCard">Precio simple: $ ${producto.precioSimple}</p>
-                    <p class="card-text styleSubtitleCard"">Precio doble: $ ${producto.precioDoble}</p>
-                    <a href="#" class="btn btn-light styleButtonCard">¡Quiero comprarla!</a>
-                 </div>`
-    
-    contenedorProductos.appendChild(div)
-    
+
+                <div>
+                    <div class="card-body styleCard mb-2 text-center" style="text-align: center" >
+                        <img src=${producto.img} class="card-img-top" style="border-color: white"| alt="...">
+                        <h5 class="card-title styleTitleCard">${producto.nombre}</h5>
+                        <p class="card-text styleSubtitleCard">Precio simple: $ ${producto.precioSimple}</p>
+                        <p class="card-text styleSubtitleCard"">Precio doble: $ ${producto.precioDoble}</p>
+                        <button id="modal-abrir">¡LA QUIERO!</button>
+
+                        <div class="modal-container">
+                            <div class="modal modal-active">
+                                <div><img class="imagenModal1" src="kita.png" alt=""></div>
+                                <div>VENI A DISFRUTAR A KITA</div>
+                                <div><button class="buttonModal" id="modal-cerrar">Cerrar</button></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>`
+
+
+contenedorProductos.appendChild(div)
+
 })
+
+
+
+
+
+
