@@ -16,7 +16,6 @@ const arrayProductos=[
 ]
 
 
-
 const contenedorProductos = document.getElementById("productos")
 
 
