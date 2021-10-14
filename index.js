@@ -40,9 +40,11 @@ arrayProductos.forEach((producto)=>{
                         <button id="modal-abrir">Abrir modal</button>
                         <div class="modal-container ">
                             <div class="modalcito modal-active">
-                                <div><img class="imagenModal1" src="kita.jpg" alt=""></div>
+                                <div><img class="imagenModal1" src="kita.png" alt=""></div>
                                 <div>VENI A DISFRUTAR A KITA</div>
+                                <div class="carritoCompras"><button class="buttonImagenModalcito"><img src="carrito.jpg" alt=""></button></div>
                                 <div><button class="buttonModalcito" id="modal-cerrar">Cerrar</button></div>
+
                             </div>
                         </div>
 

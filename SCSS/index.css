@@ -79,7 +79,7 @@ body {
 .modal-container {
   height: 100vh;
   width: 100%;
-  background-color: violet;
+  background-color: grey;
   position: fixed;
   top: 0;
   left: 0;
@@ -97,7 +97,7 @@ body {
 }
 
 .modalcito {
-  background-color: red;
+  background-color: black;
   width: 400px;
   height: 500px;
   border-radius: 5px;
@@ -111,11 +111,24 @@ body {
 }
 
 .buttonModalcito {
-  color: white;
+  color: grey;
   background-color: black;
-  margin: 30px;
-  padding: 10px;
   border-radius: 50px;
   border-color: black;
   transition: 3s;
+}
+
+.carritoCompras {
+  min-height: 2vh;
+  margin: 2vh;
+}
+
+.carritoCompras button img {
+  max-height: 4vh;
+}
+
+.buttonImagenModalcito {
+  color: black;
+  background-color: black;
+  border-color: black;
 }/*# sourceMappingURL=index.css.map */
