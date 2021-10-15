@@ -11,10 +11,9 @@
           animation: bounceInRight;
   -webkit-animation-duration: 1s;
           animation-duration: 1s;
-  -webkit-animation: bounce;
-          animation: bounce;
-  -webkit-animation-duration: 3s;
-          animation-duration: 3s;
+  -webkit-animation: bounceIn;
+          animation: bounceIn;
+  animation-duration: 1s;
 }
 .styleTitleCard:hover {
   transform: scale(1.5);

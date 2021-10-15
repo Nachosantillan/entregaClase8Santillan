@@ -12,8 +12,8 @@
     &:hover{
         transform: scale(1.5);
     }
-    animation: bounce;
-	animation-duration: 3s;
+    animation: bounceIn;
+	animation-duration: 1s;
 }
 .styleSubtitleCard{
     font-weight: bold;
