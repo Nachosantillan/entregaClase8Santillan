@@ -6,7 +6,7 @@ const arrayProductos=[
     {img: "IMAGENES/KITACLUB.PNG",  nombre: "KITA CLUB", precioSimple: 600, precioDoble: 690},
     {img: "IMAGENES/RICKY_FORT.PNG",  nombre: "RICKY FORT", precioSimple: 600, precioDoble: 690},
     {img: "IMAGENES/KRYPTONITA_C_B.PNG",  nombre: "KRYPTONIYA CON C&B", precioSimple: 600, precioDoble: 690},
-    {img: "IMAGENES/KRYPTONITA_PROVO.PNG",  nombre: "KRYPTONITA CON PROVOLETA", precioSimple: 600, precioDoble: 690},
+    {img: "IMAGENES/KRYPTONITA_PROVO.PNG",  nombre: "KRYPTONITA CON PROVO", precioSimple: 600, precioDoble: 690},
     {img: "IMAGENES/LV.PNG",  nombre: "LAS VEGAS", precioSimple: 600, precioDoble: 690},
     {img: "IMAGENES/LV_RELLENA.PNG",  nombre: "LAS VEGAS RELLENA", precioSimple: 600, precioDoble: 690},
     {img: "IMAGENES/RED_HOT.PNG",  nombre: "RED HOT", precioSimple: 600, precioDoble: 690},
@@ -24,11 +24,11 @@ arrayProductos.forEach((producto)=>{
     
     const div = document.createElement("div")
     div.className = "cad-image-top"
-    div.style = "width: 18rem"
+    div.style = "min-width: 150px; max-width: 240px; min-height: 300px"
     
     div.innerHTML = `
 
-                <div>
+                
                     <div class="card-body styleCard mb-2 text-center" style="text-align: center" >
                         <img src=${producto.img} class="card-img-top" style="border-color: white"| alt="...">
                         <h5 class="card-title styleTitleCard">${producto.nombre}</h5>
@@ -50,7 +50,7 @@ arrayProductos.forEach((producto)=>{
 
 
                     </div>
-                </div>`
+                `
 
 
 contenedorProductos.appendChild(div)
