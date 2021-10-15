@@ -37,8 +37,8 @@ arrayProductos.forEach((producto)=>{
                         
                         
                         
-                        <button id="modal-abrir">Abrir modal</button>
-                        <div class="modal-container ">
+                        <button id="modal-abrir" class="buttonModalcito">¡LA QUIERO!</button>
+                        <div class="modal-container">
                             <div class="modalcito modal-active">
                                 <div><img class="imagenModal1" src="kita.png" alt=""></div>
                                 <div>VENI A DISFRUTAR A KITA</div>

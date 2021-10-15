@@ -4,10 +4,8 @@ const modalContainer = document.getElementsByClassName('modal-container')[0]
 const modal = document.getElementsByClassName('modalcito')[0]
 
 modalAbrir.addEventListener("click", () => {
-  
-
     modalContainer.classList.add('modal-active')
-     
+    
 })
 
 modalCerrar.addEventListener("click", () => {
