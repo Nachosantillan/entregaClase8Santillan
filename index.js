@@ -25,7 +25,7 @@ arrayProductos.forEach((producto)=>{
     const div = document.createElement("div")
     div.className = "cad-image-top"
     div.style = "min-width: 150px; max-width: 240px; min-height: 300px"
-    
+        
     div.innerHTML = `
 
                 
@@ -39,8 +39,8 @@ arrayProductos.forEach((producto)=>{
                                     <div class="modalcito modal-active">
                                         <div><img class="imagenModal1" src="kita.png" alt=""></div>
                                         <div>VENI A DISFRUTAR A KITA</div>
-                                        <div class="carritoCompras"><button class="buttonImagenModalcito"><img src="carrito.jpg" alt=""></button></div>
-                                        <div><button class="buttonModalcito" id="modal-cerrar">${producto.botonCerrarModal}</button></div>
+                                        <div class="carritoCompras"><button class="buttonImagenModalcito" id="carrito-compras"><img src="carrito.jpg" alt=""></button></div>
+                                        <div><button class="buttonModalcito " id="modal-cerrar">${producto.botonCerrarModal}</button></div>
 
                                     </div>
                                 </div>
