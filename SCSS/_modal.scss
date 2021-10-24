@@ -25,7 +25,7 @@
 .modal-active{
     
     visibility: visible;
-    opacity: 0.99999999999;
+    opacity: 1;
 }
 
 .modalcito{
@@ -35,6 +35,7 @@
     border-radius: 5px;
     text-align: center;
     padding: 22px;
+    visibility: visible;
 }
 
 .imagenModal1{

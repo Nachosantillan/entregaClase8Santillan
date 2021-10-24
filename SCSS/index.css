@@ -102,6 +102,7 @@ body {
   border-radius: 5px;
   text-align: center;
   padding: 22px;
+  visibility: visible;
 }
 
 .imagenModal1 {
