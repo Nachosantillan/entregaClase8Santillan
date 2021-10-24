@@ -14,7 +14,7 @@ modalCerrar.addEventListener('click', () => {
 })
 
 modalContainer.addEventListener('click', () => {
-    modalContainer.classList.toggle('modal-active')
+    modalContainer.classList.remove('modal-active')
 })
 
 modal.addEventListener('click', (e) =>{
