@@ -7,14 +7,10 @@
     font-size: 15px;
     text-align: center;
     transition: 1s;
-    animation: bounceInRight;
-	animation-duration: 1s;
-    &:hover{
-        transform: scale(1.5);
-    }
     animation: bounceIn;
 	animation-duration: 1s;
 }
+
 .styleSubtitleCard{
     font-weight: bold;
     font-style: italic;

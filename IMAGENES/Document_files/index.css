@@ -58,7 +58,6 @@
 
 body {
   background-color: black;
-  width: 100%;
 }
 
 .titlePrincipalPage {
@@ -66,10 +65,10 @@ body {
   margin: 5px;
   padding: 5px;
   align-items: center;
-  -webkit-animation: fadeIn;
-          animation: fadeIn;
-  -webkit-animation-duration: 2s;
-          animation-duration: 2s;
+  -webkit-animation: zoomIn;
+          animation: zoomIn;
+  -webkit-animation-duration: 4s;
+          animation-duration: 4s;
 }
 
 .imagenQueVasAOrdenar {
@@ -78,10 +77,10 @@ body {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  -webkit-animation: fadeIn;
-          animation: fadeIn;
-  -webkit-animation-duration: 2s;
-          animation-duration: 2s;
+  -webkit-animation: zoomIn;
+          animation: zoomIn;
+  -webkit-animation-duration: 6s;
+          animation-duration: 6s;
 }
 
 .content-select .seleccionarQueQuiero {
@@ -227,16 +226,15 @@ body {
   border-color: black;
 }
 
-.footer {
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  height: 30px;
-  background-color: black;
+.footer nav {
+  border-top: double;
+  color: grey;
+  background-color: red;
+  font-weight: bold;
 }
 
 a {
-  transition: 1s;
+  transition: 0.6s;
 }
 
 .footer a:hover {
