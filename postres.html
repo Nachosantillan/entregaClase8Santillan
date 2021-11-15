@@ -11,10 +11,22 @@
     <link rel="stylesheet" href="SCSS/index.css" type="text/css">
     
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
-    <!-- <script defer src="JS/index.js"></script> -->
-    <!-- <script defer src="JS/modal.js"></script> -->
-    <!-- <script defer src="JS/carritocompras.js"></script> -->
-    
+    <script defer src="JS/indexPostres.js"></script>
+   
+
+    <!-- aca comienzan los links del profe -->
+
+
+    <script src="https://kit.fontawesome.com/df59baf6b8.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="./stock.js"></script>
+    <script defer src="./modal.js"></script>
+    <script defer src="./app.js"></script>
+    <script defer src="SCSS/_modal2.scss"></script>
+
+    <!-- aca finalizan los links del profe -->
 
 </head>
 <body>  
@@ -31,13 +43,12 @@
                   <li class="nav-item active">
                     <a class="nav-link" href="index.html">Inicio</a>
                   </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="quienesSomos.html" style="color: white">Quienes Somos</a>
+                  <li class="nav-item">
+                    <a class="nav-link" href="quienesSomos.html" style="color: white">Quienes Somos</a>
                   </li>
-                    <li class="nav-item">
+                  <li class="nav-item">
                     <a class="nav-link" href="preguntasFrecuentes.html" style="color: white;">Preguntas frecuentes</a>
                   </li>
-                  
                   <li class="nav-item dropdown">
                     <a style="color: white;" class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                       Contacto
@@ -49,42 +60,22 @@
                       <!--<a class="dropdown-item" href="Contacto.html">Envíanos un mensaje por la página</a>-->
                     </div>
                   </li>
-                  
+                  <li>
+                  </li>
                 </ul>
               </div>
           </nav>
 
+
         </div>	
     </div><!--end header-->
 
-
-
-
-
-
-    <div class="titlePrincipalPage"><img src="IMAGENES/Captura.PNG" alt="Inicioimagen"></div>
-
-    <div ><img class="imagenQueVasAOrdenar" src="IMAGENES/ordenar.PNG" alt="Inicioimagen"></div>
-
-    <div id="buttonsSelection">
-      <button> <a href="hamburguesas.html"> <img id="miniImagenMenu" src="/IMAGENES/burgers.jpg" alt=""> </a> </button>
-      /
-      <button> <a href="picadas.html"> <img id="miniImagenMenu" src="/IMAGENES/paraPicar.jpg" alt=""> </a> </button>
-      /
-      <button> <a href="pizzas.html"> <img id="miniImagenMenu" src="/IMAGENES/pizzas.jpg" alt=""> </a> </button>
-      /
-      <button> <a href="wraps.html"> <img id="miniImagenMenu" src="/IMAGENES/wraps.jpg" alt=""> </a> </button>
+    <div>
       
-      <br><br>
+      <button style="font-size: 20px; background-color: black; color: white; border-color: black; display: block; margin-left: auto; margin-right: auto;" id="boton-carrito"><i class="fas fa-shopping-cart"></i><span id="contadorCarrito">0</span></button>
+      <a href="index.html" > <button id="backMenu"> VOLVER AL MENÚ PRINCIPAL </button></a>
       
-      <button> <a href="postres.html"> <img id="miniImagenMenu" src="/IMAGENES/postres.jpg" alt=""> </a> </button>
-      /
-      <button> <a href="ensaladas.html"> <img id="miniImagenMenu" src="/IMAGENES/ensaladas.jpg" alt=""> </a> </button>
-      /
-      <button> <a href="cervezas.html"> <img id="miniImagenMenu" src="/IMAGENES/cervezas.jpg" alt=""> </a> </button>
-      /
-      <button> <a href="tragos.html"> <img id="miniImagenMenu" src="/IMAGENES/tragos.jpg" alt=""> </a> </button>
-    </div>  
+    </div>
 
 
 
@@ -92,10 +83,31 @@
 
 
 
+        <section >
+            <div id="productos2" class="container row mx-auto" style="align-items: center; justify-content: space-around;"></div>
+        </section> 
+
+        <section>
+          <link rel="stylesheet" href="">
+        </section>
 
 
-
-
+        <div class="modal-contenedor">
+          <div class="modal-carrito">
+              <h3>Carrito</h3>
+              <button id="carritoCerrar"><i class="fas fa-times-circle"></i></button>
+              <div id="carrito-contenedor">
+  
+                  <!-- <div class="productoEnCarrito">
+                      <p>Buzo 1</p>
+                      <p>Precio: $1200</p>
+                      <button class="boton-eliminar"><i class="fas fa-trash-alt"></i></button>
+                  </div> -->
+  
+              </div>
+              <p class="precioProducto">Precio total: $<span id="precioTotal"></span></p>
+          </div>
+         </div>
 
 
 
@@ -108,24 +120,19 @@
 
 
 
+        <footer> 
+          <nav class="footer navbar navbar-expand-lg navbar-dark">
+            <a class="navbar-brand" href="#">| Bases y condiciones | Políticas de privacidad |</a>
+            <a class="navbar-brand" style="position: absolute; right: 0" href="#">| © 2021 KitastyBar |</a>
+          </nav>
+        </footer>
+      
 
 
-
-
-
-    
-    <footer> 
-      <nav class="footer navbar navbar-expand-lg navbar-dark">
-        <a class="navbar-brand" href="#">| Bases y condiciones | Políticas de privacidad |</a>
-        <a class="navbar-brand" style="position: absolute; right: 0" href="#">| © 2021 KitastyBar |</a>
-      </nav>
-    </footer>
+  
 
 
     
 
 </body>
 </html>
-
-
-
