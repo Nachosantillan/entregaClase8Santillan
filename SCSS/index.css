@@ -337,7 +337,7 @@ p {
 }
 
 .boton-agregar {
-  background-color: black;
+  background-color: grey;
   color: white;
   font-size: 18px;
   font-weight: 700;
@@ -374,7 +374,7 @@ p {
 
 .modal-carrito {
   position: relative;
-  background-color: black;
+  background-color: grey;
   min-width: 500px;
   padding: 20px;
   margin-top: -100%;
@@ -397,7 +397,7 @@ p {
   font-size: 20px;
   color: white;
   border: none;
-  background-color: black;
+  background-color: grey;
 }
 
 .modal-carrito #carritoCerrar:hover {
