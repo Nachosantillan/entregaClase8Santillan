@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="SCSS/index.css" type="text/css">
     
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
-    <script defer src="JS/indexHamburguesas.js"></script>
+    <script defer src="JS/indexPrincipal.js"></script>
    
 
     <!-- aca comienzan los links del profe -->
@@ -73,19 +73,21 @@
 
         </div>	
     </div><!--end header-->
+
+
     `
-    <div>
+        <div>
       
-      <button style="font-size: 20px; background-color: black; color: white; border-color: black; display: block; margin-left: auto; margin-right: auto;" id="boton-carrito">
-        <i class="fas fa-shopping-cart"></i>
-        <span id="contadorCarrito"></span>
-        <div id="itemsCarrito">
-          
-        </div>
-      </button>
+                <button style="font-size: 20px; background-color: black; color: white; border-color: black; display: block; margin-left: auto; margin-right: auto;" id="boton-carrito">
+                  <i class="fas fa-shopping-cart"></i>
+                  <span id="contadorCarrito"></span>
+                  <div id="itemsCarrito">
+                    
+                  </div>
+                </button>
       <a href="index.html" > <button id="backMenu"> VOLVER AL MENÚ PRINCIPAL </button></a>
     
-    </div>
+        </div>
 
     `
 
@@ -127,21 +129,19 @@
                    
                   </tbody>
                 </table>
+                <div id="totalPedido"></div>
+                <div id="buttonVaciarYConfirmar">
+                      <a href="confirmarPedido.html" id="confirmarPedido" class="btn btn-success btn-sm" tabindex="-1" role="button" aria-disabled="true">Confirmar pedido</a>
+                      
+                      <button href="#" id="vaciarCarrito" class="btn btn-danger btn-sm" tabindex="-1" role="button" aria-disabled="true">Vaciar carrito</button>
+                </div>
 
-
-
-
-
-
-
-
-
-                  
+                
   
               </div>
               <!-- <p class="precioProducto">Precio total: $<span id="precioTotal"></span></p> -->
           </div>
-         </div>
+        </div>
 
 
 

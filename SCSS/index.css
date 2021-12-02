@@ -53,7 +53,7 @@
 
 .dropdown-item {
   color: white;
-  background-color: #992323;
+  background-color: black;
 }
 
 body {
@@ -454,4 +454,15 @@ p {
 
 a:link, a:visited, a:active {
   text-decoration: none;
+}
+
+.subtituloQuienesSomos {
+  text-align: center;
+  padding-left: 200px;
+  padding-right: 200px;
+  transition: 1s;
+  -webkit-animation: fadeIn;
+          animation: fadeIn;
+  -webkit-animation-duration: 5s;
+          animation-duration: 5s;
 }/*# sourceMappingURL=index.css.map */
