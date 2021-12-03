@@ -307,25 +307,6 @@ if(itemsCarrito2==0){
 `
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 //MODAL CARRITO SUMANDO PRODUCTOS
 
 if(localStorage.length == 0){
@@ -473,35 +454,24 @@ for(let i=0; i<localStorage.length ; i++){
 }
 
 
+// CONFIRMAR PEDIDO __________________________________________________________________________________________-
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+async function loadDoc() {
+    var xhttp = new XMLHttpRequest();
+    xhttp.onreadystatechange = function() {
+      if (this.readyState == 4 && this.status == 200) {
+          const resp = JSON.parse(this.responseText)
+          const date = resp.datetime.slice(0, 10)
+          const time = resp.datetime.slice(11, 19)
+          let str = date.split("-")
+          let final = str[2] + "/" + str[1] + "/" + str[0] 
+        document.getElementById("demo").innerHTML = time + "<br/>" + "el día " + "<br>" + final;
+      }
+    };
+    xhttp.open("GET", "https://worldtimeapi.org/api/timezone/America/Argentina/Buenos_Aires", true);
+    xhttp.send();
+  }
 
 
 
