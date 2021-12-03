@@ -64,7 +64,7 @@
                       <a class="dropdown-item" href="mailto:kitastybar@gmail.com" target="_blank">
                         <i class="fa fa-at"></i>
                       </a>
-                      <a class="dropdown-item" href="https://wa.me/+5492323626914"> 
+                      <a class="dropdown-item" href="https://wa.me/+5492323626914" > 
                         <i class="fa fa-whatsapp"></i>
                       </a>
                       <!--<a class="dropdown-item" href="Contacto.html">Envíanos un mensaje por la página</a>-->
@@ -74,6 +74,7 @@
                   
                 </ul>
               </div>
+  
 
 <!-- ________________________________CARRITO ICONO  -->
 
@@ -83,19 +84,18 @@
                           <i class="fas fa-shopping-cart"></i>
                           <span id="contadorCarrito"></span>
                           <div id="itemsCarrito">
-                            
+
                           </div>
                         </button>
             
                       </div>
 <!-- ________________________________FIN CARRITO ICONO -->
 
+        
           </nav>
 
         </div>	
     </div><!--end header-->
-
-
 
 
 
@@ -118,19 +118,19 @@
 
                 <p> 
                             
-                  <button style="background: none; border: none; border-color: black; box-shadow: none;" class="btn btn-primary" type="button" data-toggle="collapse" data-target="#seccionHamburguesas" aria-expanded="false" aria-controls="seccionHamburguesas">
+                  <button style="background: none; border: none; border-color: black; box-shadow: none;" class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="seccionHamburguesas">
                     <img id="miniImagenMenu" src="./IMAGENES/burgers.jpg" alt="">
                   </button>
 
-                  <button style="background: none; border: none; border-color: black; box-shadow: none;" class="btn btn-primary" type="button" data-toggle="collapse" data-target="#seccionPicadas" aria-expanded="false" aria-controls="seccionPicadas">
+                  <button style="background: none; border: none; border-color: black; box-shadow: none;" class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="seccionPicadas">
                     <img id="miniImagenMenu" src="./IMAGENES/paraPicar.jpg" alt="">
                   </button>
 
-                  <button style="background: none; border: none; border-color: black; box-shadow: none;" class="btn btn-primary" type="button" data-toggle="collapse" data-target="#seccionPizzas" aria-expanded="false" aria-controls="seccionPizzas">
+                  <button style="background: none; border: none; border-color: black; box-shadow: none;" class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="seccionPizzas">
                     <img id="miniImagenMenu" src="./IMAGENES/pizzas.jpg" alt="">
                   </button>
 
-                  <button style="background: none; border: none; border-color: black; box-shadow: none;" class="btn btn-primary" type="button" data-toggle="collapse" data-target="#seccionWraps2" aria-expanded="false" aria-controls="seccionWraps2">
+                  <button style="background: none; border: none; border-color: black; box-shadow: none;" class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="seccionWraps2">
                     <img id="miniImagenMenu" src="./IMAGENES/wraps.jpg" alt="">
                   </button>
 
@@ -139,6 +139,89 @@
 
 
 
+
+
+
+
+
+
+                <div class="accordion" id="accordionExample">
+                  <div class="card" style="background-color: black;">
+                    
+                
+                    <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+                      <div class="card-body">
+                        <section >
+                          <div id="productos" class="container row mx-auto" style="align-items: center; justify-content: space-around;"></div>
+                        </section> 
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card" style="background-color: black;">
+                    
+                    <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+                      <div class="card-body">
+                        <section >
+                          <div id="productosPicadas" class="container row mx-auto" style="align-items: center; justify-content: space-around;"></div>
+                        </section> 
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card" style="background-color: black;">
+                   
+                    <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+                      <div class="card-body">
+
+                        <section >
+                          <div id="productosPizzas" class="container row mx-auto" style="align-items: center; justify-content: space-around;"></div>
+                        </section> 
+
+
+                      </div>
+                    </div>
+                    
+                  <div class="card" style="background-color: black;">
+                  
+                    <div id="collapseFour" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+                      <div class="card-body">
+
+                        <section >
+                          <div id="productosWraps" class="container row mx-auto" style="align-items: center; justify-content: space-around;"></div>
+                        </section>
+
+
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- 
                 <div class="collapse" id="seccionHamburguesas">
                   <div class="card card-body" style="background-color: black;">
                     <section >
@@ -169,7 +252,7 @@
                       <div id="productosWraps" class="container row mx-auto" style="align-items: center; justify-content: space-around;"></div>
                     </section> 
                   </div>
-                </div>
+                </div> -->
 
 
 
@@ -287,9 +370,12 @@
             </table>
             <div id="totalPedido"></div>
             <div id="buttonVaciarYConfirmar">
-                  <a href="confirmarPedido.html" id="confirmarPedido" class="btn btn-success btn-sm" tabindex="-1" role="button" aria-disabled="true">Confirmar pedido</a>
+                  <button style="box-shadow: none;" id="confirmarPedido" class="btn btn-success btn-sm" tabindex="-1" role="button" aria-disabled="true">Confirmar pedido</button>
                   
                   <button href="#" id="vaciarCarrito" class="btn btn-danger btn-sm" tabindex="-1" role="button" aria-disabled="true">Vaciar carrito</button>
+
+                  <button href="#" id="seguirAgregandoAlCarrito" class="btn btn-danger btn-sm" tabindex="-1" role="button" aria-disabled="true">Seguir agregando al carrito</button>
+
             </div>
 
             

@@ -89,12 +89,21 @@ body{
    
 }
 
-#buttonsSelection button{
-    background-color: black;
+#buttonsSelection {
+    & a{
+        background-color: black;
     color: white;
     border-radius: 8px;
     border-color: black;
-   
+    box-shadow: none;
+    }& button{
+        background-color: black;
+    color: white;
+    border-radius: 8px;
+    border-color: black;
+    box-shadow: none;
+    }
+    
 }
 
 #miniImagenMenu{

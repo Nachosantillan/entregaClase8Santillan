@@ -48,10 +48,10 @@ contenedorHamburguesas.appendChild(div)
 
 
 const arrayPicadas=[
-    {img: "./IMAGENES/papasFritas.PNG",  nombre: "PAPAS CON CHEDDAR, BACON Y VERDEO", precioSimple: 470, botonComprar: "¡LA QUIERO!"},
-    {img: "./IMAGENES/papasFritas2.PNG",  nombre: "PAPAS CON CEBOLLA A LA CREMA", precioSimple: 470, botonComprar: "¡LA QUIERO!"},
-    {img: "./IMAGENES/arosDeCebolla.PNG",  nombre: "AROS DE CEBOLLA CON BARBACOA", precioSimple: 450, botonComprar: "¡LA QUIERO!"},
-    {img: "./IMAGENES/nuggetsYPapas.PNG",  nombre: "NUGGETS CON PAPAS FRITAS", precioSimple: 550, botonComprar: "¡LA QUIERO!"},
+    {img: "./IMAGENES/papasFritas.png", id:12, nombre: "PAPAS CON CHEDDAR, BACON Y VERDEO", precioSimple: 470, botonComprar: "¡LA QUIERO!"},
+    {img: "./IMAGENES/papasFritas2.png", id:13,  nombre: "PAPAS CON CEBOLLA A LA CREMA", precioSimple: 470, botonComprar: "¡LA QUIERO!"},
+    {img: "./IMAGENES/arosDeCebolla.png", id:14,  nombre: "AROS DE CEBOLLA CON BARBACOA", precioSimple: 450, botonComprar: "¡LA QUIERO!"},
+    {img: "./IMAGENES/nuggetsYPapas.png", id:15,  nombre: "NUGGETS CON PAPAS FRITAS", precioSimple: 550, botonComprar: "¡LA QUIERO!"},
 
 ]
 
@@ -88,12 +88,12 @@ contenedorPicadas.appendChild(div)
 
 
 const arrayPizzas=[
-    {img: "./IMAGENES/muzza.PNG",  nombre: "MUZZA", precioSimple: 450, botonComprar: "¡LA QUIERO!"},
-    {img: "./IMAGENES/napolitana.PNG",  nombre: "NAPOLITANA", precioSimple: 480, botonComprar: "¡LA QUIERO!"},
-    {img: "./IMAGENES/rucula.PNG",  nombre: "RUCULA Y CRUDO", precioSimple: 480, botonComprar: "¡LA QUIERO!"},
-    {img: "./IMAGENES/cebollaycrema.PNG",  nombre: "CEBOLLA A LA CREMA", precioSimple: 480, botonComprar: "¡LA QUIERO!"},
-    {img: "./IMAGENES/RUCULA.PNG",  nombre: "CHEDDAR", precioSimple: 480, botonComprar: "¡LA QUIERO!"},
-    {img: "./IMAGENES/4quesos.PNG",  nombre: "CUATRO QUESOS", precioSimple: 480, botonComprar: "¡LA QUIERO!"},
+    {img: "./IMAGENES/muzza.png", id:16,  nombre: "MUZZA", precioSimple: 450, botonComprar: "¡LA QUIERO!"},
+    {img: "./IMAGENES/napolitana.png",id:17,  nombre: "NAPOLITANA", precioSimple: 480, botonComprar: "¡LA QUIERO!"},
+    {img: "./IMAGENES/rucula.png", id:18,  nombre: "RUCULA Y CRUDO", precioSimple: 480, botonComprar: "¡LA QUIERO!"},
+    {img: "./IMAGENES/cebollaycrema.png", id:19,  nombre: "CEBOLLA A LA CREMA", precioSimple: 480, botonComprar: "¡LA QUIERO!"},
+    {img: "./IMAGENES/RUCULA.png", id:20,  nombre: "CHEDDAR", precioSimple: 480, botonComprar: "¡LA QUIERO!"},
+    {img: "./IMAGENES/4quesos.png", id:21, nombre: "CUATRO QUESOS", precioSimple: 480, botonComprar: "¡LA QUIERO!"},
 
 ]
 
@@ -130,10 +130,10 @@ contenedorPizzas.appendChild(div)
 
 
 const arrayWraps=[
-    {img: "./IMAGENES/wrapParmesano.PNG",  nombre: "PARMESANO", precioSimple: 440, botonComprar: "¡LA QUIERO!"},
-    {img: "./IMAGENES/wrapMediterraneo.PNG",  nombre: "MEDITERRANEO", precioSimple: 440, botonComprar: "¡LA QUIERO!"},
-    {img: "./IMAGENES/wrapGriego.PNG",  nombre: "GRIEGO", precioSimple: 440, botonComprar: "¡LA QUIERO!"},
-    {img: "./IMAGENES/wrapJamonYMuza.PNG",  nombre: "JAMON Y MUZZA", precioSimple: 440, botonComprar: "¡LA QUIERO!"},
+    {img: "./IMAGENES/wrapParmesano.png",id:22,  nombre: "PARMESANO", precioSimple: 440, botonComprar: "¡LA QUIERO!"},
+    {img: "./IMAGENES/wrapMediterraneo.png",id:23,  nombre: "MEDITERRANEO", precioSimple: 440, botonComprar: "¡LA QUIERO!"},
+    {img: "./IMAGENES/wrapGriego.png", id: 24,  nombre: "GRIEGO", precioSimple: 440, botonComprar: "¡LA QUIERO!"},
+    {img: "./IMAGENES/wrapJamonYMuza.png", id:25,  nombre: "JAMON Y MUZZA", precioSimple: 440, botonComprar: "¡LA QUIERO!"},
 
 ]
 
@@ -167,20 +167,12 @@ contenedorWraps.appendChild(div)
 
 
 
-
-
-
-
-
-
-
-
-
 // MODAL CARRITO
 
 const contenedorModal = document.getElementsByClassName('modal-contenedor')[0]
 const botonAbrir = document.getElementById('boton-carrito')
 const botonCerrar = document.getElementById('carritoCerrar')
+const botonSeguirAgregandoAlCarrito = document.getElementById('seguirAgregandoAlCarrito')
 const modalCarrito = document.getElementsByClassName('modal-carrito')[0]
 const productosTablaCarrito = document.getElementById('productosTablaCarrito')
 const totalPedido = document.getElementById('totalPedido')
@@ -193,6 +185,9 @@ botonAbrir.addEventListener('click', ()=>{
 botonCerrar.addEventListener('click', ()=>{
     contenedorModal.classList.toggle('modal-active')
 })
+botonSeguirAgregandoAlCarrito.addEventListener('click', ()=>{
+    contenedorModal.classList.toggle('modal-active')
+})
 contenedorModal.addEventListener('click', ()=>{
     botonCerrar.click()
 })
@@ -201,9 +196,15 @@ modalCarrito.addEventListener('click', (event)=>{
 })
 
 
+confirmarPedido.addEventListener('click', ()=>{
+    if(localStorage.length < 1) return null
+    console.log("HOLAAA")
+    return window.location = "confirmarPedido.html"
+})
 
 
 
+const arrayProductos = arrayHamburguesas.concat(arrayPicadas, arrayPizzas, arrayWraps)
 
 
 
@@ -230,7 +231,6 @@ if(localStorage.length == 0){
 
 for(let i=0 ; i<arrayProductos.length ; i++){
     const hamburguesaCarrito = document.getElementById(`buttonCarrito${i}`)
-
 
     hamburguesaCarrito.addEventListener('click', (event)=>{
         let itemLocalStorage = localStorage.getItem(arrayProductos[i].nombre) 
@@ -300,7 +300,7 @@ let subtotalBurger = 0
 if(itemsCarrito2==0){
     itemsCarrito.innerHTML=`
     <span>
-        El carrito está vacío
+        0
     </span>
 `
 }else{
@@ -310,6 +310,12 @@ if(itemsCarrito2==0){
     </span>
 `
 }
+
+
+
+
+
+
 
 
 
@@ -353,13 +359,9 @@ if(localStorage.length == 0){
                 <tr>
                     <td>${key}</td>
                         <td class="text-center">
-                            <button class='botonRestarProducto${key} style='background-color: transparent; color: white'>
-                                <i class='bx bx-minus-circle'></i>
-                            </button> 
+                            
                                 ${value} 
-                            <button class='botonSumarProducto${key} style='background-color: transparent; color: white'>
-                                <i class='bx bx-plus-circle'></i>
-                            </button>
+                            
                         </td>
                     <td class="text-center">$ ${precio}</td>
                     <td class="text-center">$ ${precioTotal}</td>
@@ -367,6 +369,13 @@ if(localStorage.length == 0){
             `
         )
     }
+
+                    // <button class='botonRestarProducto${key} style='background-color: transparent; color: white'>
+                    //                             <i class='bx bx-minus-circle'></i>
+                    //                         </button> 
+                    // <button class='botonSumarProducto${key} style='background-color: transparent; color: white'>
+                    //                             <i class='bx bx-plus-circle'></i>
+                    //                         </button>
 
     productosTablaCarrito.innerHTML=`
         ${str}
@@ -388,7 +397,7 @@ vaciarCarrito.addEventListener('click', () =>{
 
     itemsCarrito.innerHTML=`
         <span>
-            El carrito está vacío
+            0
         </span>
     `
 
@@ -448,14 +457,13 @@ for(let i=0; i<localStorage.length ; i++){
     let key = localStorage.key(i) 
     const botonRestar = document.getElementsByClassName(`botonRestarProducto${key}`)[0]
     const botonSumar = document.getElementsByClassName(`botonSumarProducto${key}`)[0]
-
-    botonRestar.addEventListener('click', () =>{
+    
+    botonRestar.addEventListener('click', (e) =>{
         let value = localStorage.getItem(key)
         value=parseInt(value)-1
         if(value >= 0) {
             localStorage.setItem(key, value)
         }
-        console.log("HOLA LLEGUE")
         actualizarCantidades()
     })
 
@@ -467,28 +475,6 @@ for(let i=0; i<localStorage.length ; i++){
     })
     
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
