@@ -266,13 +266,9 @@ for(let i=0 ; i<arrayProductos.length ; i++){
                     <tr>
                         <td>${key}</td>
                             <td class="text-center">
-                                <button class='botonRestarProducto${key} style='background-color: transparent; color: white'>
-                                    <i class='bx bx-minus-circle'></i>
-                                </button> 
+                                
                                     ${value} 
-                                <button class='botonSumarProducto${key} style='background-color: transparent; color: white'>
-                                    <i class='bx bx-plus-circle'></i>
-                                </button>
+                                
                             </td>
                         <td class="text-center">$ ${precio}</td>
                         <td class="text-center">$ ${precioTotal}</td>
